@@ -1,0 +1,186 @@
+/*
+
+
+
+
+
+
+*/
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100svh;
+  font-size: 62.5%;
+  background-image: linear-gradient(to top right, #e8e8eb, #fff4f6);
+  overflow: hidden;
+}
+.electric-fan {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  left: 50%;
+  margin-inline: auto;
+  width: 280px;
+  height: 350px;
+  border-radius: 50% / 50px 40px 50px 40px;
+  transform: translateX(-50%) translateY(-20px) rotate3d(1, 1, 1, -7deg);
+  background: #1f83f2;
+  transition: 0.5s;
+  background-image: linear-gradient(to bottom, #c6e1ff, #d8e6f7 28%, #6da4e7db 86%);
+  box-shadow: 25px 25px 175px rgba(0, 0, 0, 0.25), 10px 10px 170px rgba(0, 0, 0, 0.25), 10px 50px 220px rgba(19, 16, 16, 0.74),
+    inset 2px 2px 2px rgba(255, 255, 255, 0.685), inset 1px 1px 1px #ff6565, inset 2px 2px 2px rgba(255, 255, 255, 0.25),
+    inset -2px -2px 10px rgba(0, 0, 0, 0.75);
+}
+.fan-content {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  width: 75%;
+  height: 86%;
+  border-radius: 50% / 22px 22px 30px 30px;
+  box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.15), inset 2px 2px 8px #d8e6f7, inset -4px -4px 10px rgba(0, 0, 0, 0.25),
+    0px 1px 1px 1px rgba(0, 0, 0, 0.25);
+}
+.switch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  bottom: 8px;
+  left: 12px;
+  width: 85%;
+  height: 32%;
+  border-radius: 50% / 0 0 18px 20px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  background: #91b8df;
+  box-shadow: 5px 10px 15px rgb(0 0 0 / 12%), inset 14px 14px 50px rgb(35 82 133 / 12%), -4px -4px 4px rgb(215 234 255 / 45%),
+    inset 4px 4px 6px rgb(90 117 148 / 94%), 4px 4px 4px rgb(69 98 131 / 37%), inset 10px 10px 12px rgb(91 151 199 / 26%),
+    inset -10px -10px 12px rgb(140 191 231 / 60%), inset -4px -4px 6px rgb(220 240 255 / 91%), inset -2px -2px 4px rgb(84 141 205 / 78%);
+}
+
+.ctrl {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 66px;
+  border-radius: 999px;
+  background: #91b8df;
+  box-shadow: 5px 6px 10px rgba(0, 0, 0, 0.35), inset 1px 2px 6px #d8e6f7, inset -2px -2px 6px rgba(0, 0, 0, 0.25),
+    1px 1px 1px 2px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+  user-select: none;
+}
+.ctrl:active {
+  background: #91b8df;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25), inset 1px 1px 2px #d8e6f7, inset -1px -1px 2px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(0, 0, 0, 0.15);
+  transform: translateY(2px);
+}
+.pillar {
+  position: absolute;
+  top: -56%;
+  width: 150px;
+  height: 300px;
+  background-image: linear-gradient(to top left, rgb(169 198 231) 30%, transparent 80%);
+  border-radius: 50% / 0 0 86px 86px;
+}
+.fan-cage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -12%;
+  left: 58%;
+  transform: translate(-50%, -50%) rotateX(340deg);
+  width: 650px;
+  height: 650px;
+  background: #b3b3b33e;
+  border-radius: 9999px;
+  border: 10px solid #c0d7f1;
+}
+.fan-body,
+.fan-body img {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 160px;
+  border-radius: 9999px;
+  background: #c5daf4;
+  box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.15), inset 2px 2px 8px #d8e6f7, inset -4px -4px 20px rgba(0, 0, 0, 0.15);
+  z-index: 99;
+  font-size: 32px;
+}
+.fan-body img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80px;
+  height: 80px;
+  transform: translate(-50%, -50%);
+  opacity: 0.4;
+}
+.brand {
+  color: #9c27b0;
+  font-weight: 700;
+  font-size: 30px;
+  text-shadow: 1px 1px #0c121dde;
+}
+.blades {
+  --duration: 0.62s;
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: identifier var(--duration) linear infinite;
+}
+.blades:has(#ctrl1:checked) {
+  --duration: 0.62s;
+}
+.blades:has(#ctrl2:checked) {
+  --duration: 0.2s;
+}
+.blades:has(#ctrl3:checked) {
+  --duration: 0;
+}
+
+.blade {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 256px;
+  height: 186px;
+  background-color: #3498db;
+  background-image: linear-gradient(to bottom right, #1f83f2, #c6e1ff, #d8e6f7);
+  transform-origin: top left;
+  border-radius: 0px 250px 100px 290px / 10px 190px 80px 250px;
+  box-shadow: inset 6px 20px 25px rgba(0, 0, 0, 0.15), inset 2px 2px 8px #d8e6f7;
+}
+
+.blade1 {
+  transform: rotate(0deg);
+}
+
+.blade2 {
+  transform: rotate(120deg);
+}
+
+.blade3 {
+  transform: rotate(240deg);
+}
+
+@keyframes identifier {
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
