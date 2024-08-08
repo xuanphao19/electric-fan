@@ -175,10 +175,10 @@ body {
 }
 
 .blades:has(#ctrl1:checked) {
-  --duration: 0.62s;
+  --duration: 0.45s;
 }
 .blades:has(#ctrl2:checked) {
-  --duration: 0.2s;
+  --duration: 0.33s;
 }
 .blades:has(#ctrl3:checked) {
   --duration: 0;
