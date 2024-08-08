@@ -133,8 +133,8 @@ body {
   width: 160px;
   height: 160px;
   border-radius: 9999px;
-  background: #c5daf4;
-  box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.15), inset 2px 2px 8px #d8e6f7, inset -4px -4px 20px rgba(0, 0, 0, 0.15);
+  background: #cae5fd;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.12), inset 2px 2px 6px #d8f4f7, inset -2px -2px 6px rgba(0, 0, 0, 0.12);
   z-index: 99;
   font-size: 32px;
 }
@@ -145,12 +145,12 @@ body {
   width: 80px;
   height: 80px;
   transform: translate(-50%, -50%);
-  opacity: 0.4;
+  opacity: 0.6;
 }
 .brand {
   position: absolute;
   top: 48%;
-  color: #9c27b0;
+  color: #dd16ff;
   font-weight: 700;
   font-size: 30px;
   text-shadow: -2px 2px 2px #ffeb3b;
