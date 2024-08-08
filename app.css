@@ -191,9 +191,8 @@ body {
   height: 2px;
   transform-origin: top left;
   transform: rotate(var(--rotate));
-  background-image: linear-gradient(to right, #d2e8ff 32%, #0055bc, #c9d3de, #d2e8ff);
+  background-image: linear-gradient(to right, #d2e8ff 32%, #7eb1ef9e, #c9d3de, #d2e8ff);
 }
-/*  #c6e1ff,  */
 .blade {
   position: absolute;
   top: 0%;
