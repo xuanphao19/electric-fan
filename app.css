@@ -6,15 +6,32 @@
 
 
 */
+
+html {
+  font-size: 62.5%;
+}
+body {
+  width: 100vw;
+  height: 100svh;
+  line-height: 1.5;
+  font-size: 1.6rem;
+  text-rendering: optimizespeed;
+  overflow: hidden;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  min-height: 100svh;
+  height: 100%;
+  overflow: hidden;
   font-size: 62.5%;
   background-image: linear-gradient(to top right, #e8e8eb, #fff4f6);
-  overflow: hidden;
 }
 .electric-fan {
   position: absolute;
@@ -31,9 +48,9 @@
   background: #1f83f2;
   transition: 0.5s;
   background-image: linear-gradient(to bottom, #c6e1ff, #d8e6f7 28%, #6da4e7db 86%);
-  box-shadow: 25px 25px 175px rgba(0, 0, 0, 0.25), 10px 10px 170px rgba(0, 0, 0, 0.25), 10px 50px 220px rgba(19, 16, 16, 0.74),
-    inset 2px 2px 2px rgba(255, 255, 255, 0.685), inset 1px 1px 1px #ff6565, inset 2px 2px 2px rgba(255, 255, 255, 0.25),
-    inset -2px -2px 10px rgba(0, 0, 0, 0.75);
+  box-shadow: 25px 25px 175px rgba(0, 0, 0, 0.25), 10px 10px 170px rgba(0, 0, 0, 0.25),
+    10px 50px 220px rgba(19, 16, 16, 0.74), inset 2px 2px 2px rgba(255, 255, 255, 0.685), inset 1px 1px 1px #ff6565,
+    inset 2px 2px 2px rgba(255, 255, 255, 0.25), inset -2px -2px 10px rgba(0, 0, 0, 0.75);
 }
 .fan-content {
   display: flex;
@@ -60,9 +77,10 @@
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
   background: #91b8df;
-  box-shadow: 5px 10px 15px rgb(0 0 0 / 12%), inset 14px 14px 50px rgb(35 82 133 / 12%), -4px -4px 4px rgb(215 234 255 / 45%),
-    inset 4px 4px 6px rgb(90 117 148 / 94%), 4px 4px 4px rgb(69 98 131 / 37%), inset 10px 10px 12px rgb(91 151 199 / 26%),
-    inset -10px -10px 12px rgb(140 191 231 / 60%), inset -4px -4px 6px rgb(220 240 255 / 91%), inset -2px -2px 4px rgb(84 141 205 / 78%);
+  box-shadow: 5px 10px 15px rgb(0 0 0 / 12%), inset 14px 14px 50px rgb(35 82 133 / 12%),
+    -4px -4px 4px rgb(215 234 255 / 45%), inset 4px 4px 6px rgb(90 117 148 / 94%), 4px 4px 4px rgb(69 98 131 / 37%),
+    inset 10px 10px 12px rgb(91 151 199 / 26%), inset -10px -10px 12px rgb(140 191 231 / 60%),
+    inset -4px -4px 6px rgb(220 240 255 / 91%), inset -2px -2px 4px rgb(84 141 205 / 78%);
 }
 
 .ctrl {
@@ -80,7 +98,8 @@
 }
 .ctrl:active {
   background: #91b8df;
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25), inset 1px 1px 2px #d8e6f7, inset -1px -1px 2px rgba(0, 0, 0, 0.15), 0px 0px 0px 1px rgba(0, 0, 0, 0.15);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25), inset 1px 1px 2px #d8e6f7, inset -1px -1px 2px rgba(0, 0, 0, 0.15),
+    0px 0px 0px 1px rgba(0, 0, 0, 0.15);
   transform: translateY(2px);
 }
 .pillar {
@@ -129,10 +148,12 @@
   opacity: 0.4;
 }
 .brand {
+  position: absolute;
+  top: 48%;
   color: #9c27b0;
   font-weight: 700;
   font-size: 30px;
-  text-shadow: 1px 1px #0c121dde;
+  text-shadow: -2px 2px 2px #ffeb3b;
 }
 .blades {
   --duration: 0.62s;
